@@ -156,6 +156,9 @@
     collectionLayout.minimumInteritemSpacing = _cellSpacing;
     _selectFontScale = self.normalTextFont.pointSize/(self.selectedTextFont ? self.selectedTextFont.pointSize:self.normalTextFont.pointSize);
     collectionLayout.sectionInset = _sectionInset;
+    if (self.disableSelectCellScale) {
+        _selectFontScale = 1;
+    }
 }
 
 - (void)invalidateLayout {

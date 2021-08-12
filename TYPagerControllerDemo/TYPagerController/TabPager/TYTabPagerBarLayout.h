@@ -24,6 +24,7 @@ typedef NS_ENUM(NSUInteger, TYPagerBarStyle) {
 
 @property (nonatomic, weak, readonly) TYTabPagerBar *pagerTabBar;
 @property (nonatomic, assign, readonly) CGFloat selectFontScale;
+@property (nonatomic, assign) BOOL disableSelectCellScale;
 
 // set barStyle will reset propertys, so you should first time set it,
 @property (nonatomic, assign) TYPagerBarStyle barStyle; // default TYPagerBarStyleProgressElasticView
